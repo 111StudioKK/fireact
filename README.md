@@ -42,6 +42,9 @@ FireAct.propTypes = {
 Listen for data changes at a particular location.
 
 ```javascript
+import React from 'react';
+import FireAct from 'fireact';
+
 class Demo extends React.Component {
   constructor(props) {
     super(props);
