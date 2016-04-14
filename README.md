@@ -186,7 +186,7 @@ Generates a new Query object limited to the last certain number of children.
 ```
 
 #### Writing Data
-In order to write data use the ```bindTo``` prop :
+In order to write data use the ```bindTo``` prop. Any time the data passed to bindTo changes, it will be updated on firebase.
 
 ```javascript
 
@@ -198,7 +198,7 @@ render(){
   return (
     <FireAct
         bindTo={data}
-        url="https://dinosaur-facts.firebaseio.com/dinosaurs"
+        url="https://fireact.firebaseio.com/someId"
       />
   );
 }
@@ -216,7 +216,7 @@ render(){
     <FireAct
         bindTo={data}
         push
-        url="https://dinosaur-facts.firebaseio.com/dinosaurs"
+        url="https://fireact.firebaseio.com/dinosaurs"
       />
   );
 }
